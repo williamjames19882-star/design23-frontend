@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  body {
+    @apply font-body text-warm-ink bg-warm-white antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-semibold tracking-tight;
+  }
+  /* Minimum touch target for interactive elements on small screens */
+  @media (max-width: 640px) {
+    a[href], button {
+      min-height: 44px;
+      min-width: 44px;
+    }
+  }
+  /* Focus visible for accessibility */
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-accent-gold;
+  }
+  /* Anchor scroll: leave space for sticky header so section is visible */
+  section[id] {
+    scroll-margin-top: 5.5rem;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
