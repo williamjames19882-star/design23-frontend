@@ -1,13 +1,13 @@
 import { motion } from 'framer-motion'
 
 const variants = {
-  primary: 'bg-accent-gold text-warm-white hover:bg-accent-gold-light border-transparent',
-  secondary: 'bg-transparent text-warm-ink border-2 border-warm-charcoal hover:border-accent-gold hover:text-accent-gold',
+  primary: 'bg-accent-burgundy text-warm-white hover:bg-accent-burgundy-light border-transparent',
+  secondary: 'bg-transparent text-warm-ink border-2 border-warm-charcoal hover:border-accent-burgundy hover:text-accent-burgundy',
   ghost: 'bg-transparent text-warm-charcoal hover:bg-warm-sand/50',
 }
 
 export default function Button({ children, variant = 'primary', href, className = '', ...props }) {
-  const base = 'inline-flex items-center justify-center font-body font-medium rounded-lg transition-colors duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-gold focus-visible:ring-offset-2 min-h-[44px] px-6 py-3 text-fluid-lg'
+  const base = 'inline-flex items-center justify-center font-body font-medium rounded-lg transition-colors duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-burgundy focus-visible:ring-offset-2 min-h-[44px] px-6 py-3 text-fluid-lg'
   const combined = `${base} ${variants[variant] || variants.primary} ${className}`
 
   if (href) {

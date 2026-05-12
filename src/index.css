@@ -21,7 +21,7 @@
   }
   /* Focus visible for accessibility */
   :focus-visible {
-    @apply outline-2 outline-offset-2 outline-accent-gold;
+    @apply outline-2 outline-offset-2 outline-red-700;
   }
   /* Anchor scroll: leave space for sticky header so section is visible */
   section[id] {

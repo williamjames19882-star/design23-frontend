@@ -47,7 +47,7 @@ export default function ContactForm() {
         <button
           type="button"
           onClick={() => setSubmitted(false)}
-          className="mt-4 text-accent-gold hover:text-accent-gold-light font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-gold rounded"
+          className="mt-4 text-accent-burgundy hover:text-burgundy-light font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-burgundy rounded"
         >
           Send another message
         </button>
@@ -73,7 +73,7 @@ export default function ContactForm() {
           name="name"
           value={form.name}
           onChange={handleChange}
-          className="w-full rounded-lg border border-warm-sand bg-warm-white px-4 py-3 text-warm-ink placeholder-warm-stone focus:border-accent-gold focus:ring-2 focus:ring-accent-gold/20 focus:outline-none transition duration-300 min-h-[44px]"
+          className="w-full rounded-lg border border-warm-sand bg-warm-white px-4 py-3 text-warm-ink placeholder-warm-stone focus:border-accent-burgundy focus:ring-2 focus:ring-accent-burgundy/20 focus:outline-none transition duration-300 min-h-[44px]"
           placeholder="Your name"
           aria-invalid={!!errors.name}
           aria-describedby={errors.name ? 'name-error' : undefined}
@@ -94,7 +94,7 @@ export default function ContactForm() {
           name="email"
           value={form.email}
           onChange={handleChange}
-          className="w-full rounded-lg border border-warm-sand bg-warm-white px-4 py-3 text-warm-ink placeholder-warm-stone focus:border-accent-gold focus:ring-2 focus:ring-accent-gold/20 focus:outline-none transition duration-300 min-h-[44px]"
+          className="w-full rounded-lg border border-warm-sand bg-warm-white px-4 py-3 text-warm-ink placeholder-warm-stone focus:border-accent-burgundy focus:ring-2 focus:ring-accent-burgundy/20 focus:outline-none transition duration-300 min-h-[44px]"
           placeholder="you@example.com"
           aria-invalid={!!errors.email}
           aria-describedby={errors.email ? 'email-error' : undefined}
@@ -115,7 +115,7 @@ export default function ContactForm() {
           value={form.message}
           onChange={handleChange}
           rows={5}
-          className="w-full rounded-lg border border-warm-sand bg-warm-white px-4 py-3 text-warm-ink placeholder-warm-stone focus:border-accent-gold focus:ring-2 focus:ring-accent-gold/20 focus:outline-none transition duration-300 resize-y min-h-[120px]"
+          className="w-full rounded-lg border border-warm-sand bg-warm-white px-4 py-3 text-warm-ink placeholder-warm-stone focus:border-accent-burgundy focus:ring-2 focus:ring-accent-burgundy/20 focus:outline-none transition duration-300 resize-y min-h-[120px]"
           placeholder="Tell us about your project..."
           aria-invalid={!!errors.message}
           aria-describedby={errors.message ? 'message-error' : undefined}

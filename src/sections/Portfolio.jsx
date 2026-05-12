@@ -74,7 +74,7 @@ export default function Portfolio() {
           >
             <button
               type="button"
-              className="absolute top-4 right-4 p-2 text-warm-white hover:text-accent-gold-light transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-gold rounded min-h-[44px] min-w-[44px] flex items-center justify-center"
+              className="absolute top-4 right-4 p-2 text-warm-white hover:text-burgundy-light transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-burgundy rounded min-h-[44px] min-w-[44px] flex items-center justify-center"
               onClick={() => setLightbox(null)}
               aria-label="Close"
             >
@@ -96,7 +96,7 @@ export default function Portfolio() {
                 className="w-full rounded-lg shadow-2xl object-contain max-h-[85vh]"
               />
               <p className="mt-4 text-center text-warm-white font-heading text-xl">
-                {lightbox.title} <span className="text-accent-gold-light">— {lightbox.category}</span>
+                {lightbox.title} <span className="text-burgundy-light">— {lightbox.category}</span>
               </p>
             </motion.div>
           </motion.div>

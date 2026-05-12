@@ -35,15 +35,15 @@ export default function About() {
             </p>
             <ul className="space-y-2 text-warm-charcoal text-fluid-lg">
               <li className="flex items-center gap-2">
-                <span className="w-2 h-2 rounded-full bg-accent-gold" aria-hidden="true" />
+                <span className="w-2 h-2 rounded-full bg-accent-burgundy" aria-hidden="true" />
                 Residential & commercial projects
               </li>
               <li className="flex items-center gap-2">
-                <span className="w-2 h-2 rounded-full bg-accent-gold" aria-hidden="true" />
+                <span className="w-2 h-2 rounded-full bg-accent-burgundy" aria-hidden="true" />
                 Bespoke furniture and joinery
               </li>
               <li className="flex items-center gap-2">
-                <span className="w-2 h-2 rounded-full bg-accent-gold" aria-hidden="true" />
+                <span className="w-2 h-2 rounded-full bg-accent-burgundy" aria-hidden="true" />
                 Sourcing and procurement
               </li>
             </ul>

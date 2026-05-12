@@ -17,8 +17,9 @@ export default {
           ink: '#1a1a1a',
         },
         accent: {
-          gold: '#b8860b',
-          'gold-light': '#d4a84b',
+          burgundy: '#8B1538',
+          'burgundy-light': '#A92B4F',
+          'burgundy-dark': '#6B0D2B',
           sage: '#6b7b6b',
           'sage-light': '#8f9e8f',
         },

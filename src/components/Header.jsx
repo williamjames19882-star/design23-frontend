@@ -31,8 +31,8 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full bg-warm-white/95 backdrop-blur-sm border-b border-warm-sand/50">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8 h-16 sm:h-20" aria-label="Main navigation">
-        <a href="#hero" className="font-heading text-fluid-xl font-semibold text-warm-ink transition-colors hover:text-accent-gold focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-gold focus-visible:ring-offset-2 rounded">
-          Design23
+        <a href="#hero" className="transition-opacity hover:opacity-80 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-burgundy focus-visible:ring-offset-2 rounded">
+          <img src="/title.png" alt="Design23 Interiors Logo" className="h-12 sm:h-20 w-auto" />
         </a>
 
         {/* Desktop nav */}
@@ -41,7 +41,7 @@ export default function Header() {
             <li key={link.href}>
               <a
                 href={link.href}
-                className="text-warm-charcoal hover:text-accent-gold transition-colors duration-300 text-fluid-lg font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-gold focus-visible:ring-offset-2 rounded py-2"
+                className="text-warm-charcoal hover:text-accent-burgundy transition-colors duration-300 text-fluid-lg font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-burgundy focus-visible:ring-offset-2 rounded py-2"
                 onClick={() => setMobileOpen(false)}
               >
                 {link.label}
@@ -53,7 +53,7 @@ export default function Header() {
         {/* Mobile menu button */}
         <button
           type="button"
-          className="md:hidden p-2 rounded-lg text-warm-ink hover:bg-warm-sand/50 transition-colors duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-gold focus-visible:ring-offset-2 min-h-[44px] min-w-[44px] flex items-center justify-center"
+          className="md:hidden p-2 rounded-lg text-warm-ink hover:bg-warm-sand/50 transition-colors duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-burgundy focus-visible:ring-offset-2 min-h-[44px] min-w-[44px] flex items-center justify-center"
           onClick={() => setMobileOpen((o) => !o)}
           aria-expanded={mobileOpen}
           aria-controls="mobile-menu"
@@ -103,7 +103,7 @@ export default function Header() {
                   >
                     <a
                       href={link.href}
-                      className="block py-3 px-3 rounded-lg text-warm-charcoal hover:bg-warm-sand/50 hover:text-accent-gold transition-colors duration-300 text-lg font-medium"
+                      className="block py-3 px-3 rounded-lg text-warm-charcoal hover:bg-warm-sand/50 hover:text-accent-burgundy transition-colors duration-300 text-lg font-medium"
                       onClick={(e) => {
                         e.preventDefault()
                         handleNavClick(link.href, () => setMobileOpen(false))

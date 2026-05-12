@@ -7,10 +7,10 @@ export default function ServiceCard({ title, description, icon }) {
       whileHover={{ y: -4 }}
       transition={{ duration: 0.3, ease: 'easeOut' }}
     >
-      <div className="absolute top-0 right-0 w-24 h-24 bg-accent-gold/5 rounded-bl-full transition-transform duration-300 group-hover:scale-110" />
+      <div className="absolute top-0 right-0 w-24 h-24 bg-accent-burgundy/5 rounded-bl-full transition-transform duration-300 group-hover:scale-110" />
       <div className="relative">
         {icon && (
-          <div className="mb-4 text-accent-gold" aria-hidden="true">
+          <div className="mb-4 text-accent-burgundy" aria-hidden="true">
             {icon}
           </div>
         )}

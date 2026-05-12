@@ -25,24 +25,36 @@ export default function Contact() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-60px' }}
           transition={{ duration: 0.5 }}
-          className="max-w-md mx-auto text-center rounded-2xl bg-warm-sand/20 border border-warm-sand/40 p-8 md:p-10"
+          className="max-w-4xl mx-auto"
         >
-          <h3 className="font-heading text-xl text-warm-ink mb-6">Contact details</h3>
-          <ul className="space-y-5 text-warm-charcoal text-fluid-lg">
-            <li>
-              <a href="mailto:narsingarabati@gmail.com" className="hover:text-accent-gold transition-colors duration-300 inline-block">
-                narsingarabati@gmail.com
-              </a>
-            </li>
-            <li>
-              <a href="tel:+919542323301" className="hover:text-accent-gold transition-colors duration-300 inline-block">
-                +91 954 232 3301
-              </a>
-            </li>
-            <li>
-              <span>Studio by appointment</span>
-            </li>
-          </ul>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+            <motion.div
+              initial={{ opacity: 0, x: 24 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, margin: '-40px' }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
+            >
+              <img
+                src="/BusinessCard2.jpg"
+                alt="Design23 Business Card 2"
+                className="w-full h-auto object-cover"
+              />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: -24 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, margin: '-40px' }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
+            >
+              <img
+                src="/BusinessCard1.jpg"
+                alt="Design23 Business Card 1"
+                className="w-full h-auto object-cover"
+              />
+            </motion.div>
+          </div>
         </motion.div>
 
         {/* Send message form – commented for now

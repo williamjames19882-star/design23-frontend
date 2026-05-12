@@ -18,8 +18,8 @@ export default function Footer() {
       >
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
           <div>
-            <a href="#hero" className="font-heading text-2xl font-semibold text-warm-white hover:text-accent-gold-light transition-colors duration-300">
-              Design23Interiors
+            <a href="#hero" className="inline-block hover:opacity-80 transition-opacity duration-300">
+              <img src="/title.png" alt="Design23 Interiors" className="h-16 w-auto" />
             </a>
             <p className="mt-4 text-warm-sand max-w-md text-fluid-lg">
               Transforming spaces with thoughtful design. Residential and commercial interior design and renovation.
@@ -30,7 +30,7 @@ export default function Footer() {
             <ul className="mt-4 space-y-2">
               {footerLinks.map((link) => (
                 <li key={link.href}>
-                  <a href={link.href} className="text-warm-sand hover:text-accent-gold-light transition-colors duration-300">
+                  <a href={link.href} className="text-warm-sand hover:text-burgundy-light transition-colors duration-300">
                     {link.label}
                   </a>
                 </li>
