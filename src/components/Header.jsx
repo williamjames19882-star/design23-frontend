@@ -29,7 +29,7 @@ export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-warm-white/95 backdrop-blur-sm border-b border-warm-sand/50">
+    <header className="sticky top-0 z-50 w-full bg-[#f4f2e6] backdrop-blur-sm border-b border-warm-sand/50">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8 h-16 sm:h-20" aria-label="Main navigation">
         <a href="#hero" className="transition-opacity hover:opacity-80 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-burgundy focus-visible:ring-offset-2 rounded">
           <img src="/title.png" alt="Design23 Interiors Logo" className="h-12 sm:h-20 w-auto" />
